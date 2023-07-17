@@ -13,7 +13,7 @@ Click Food
     Sleep               3s
 
 Search Food
-    Input Text                //input[@class='typeahead typehead-nocircle tt-input']    Egg Fried Rice
+    Input Text                //input[@class='typeahead typehead-nocircle tt-input']    Ayam Pongteh
     Click Button              //button[@class='button m-search__submit m-searchsubmit-search-home']
     Sleep                     3s
     Execute Javascript        window.scrollTo(0,1000)
