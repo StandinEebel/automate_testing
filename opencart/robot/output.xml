@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230914 10:55:02.990" rpa="false" schemaversion="4">
+<suite id="s1" name="Opencart" source="C:\Users\Admin\Desktop\Hello World\RobotFramework\opencart\robot\opencart.robot">
+<test id="s1-t1" name="OC_TC1 Verify that monitor feature can open" line="51">
+<kw name="Open web">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${browser}</arg>
+<arg>browser=${platform}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230914 10:55:03.195" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
+<status status="PASS" starttime="20230914 10:55:03.195" endtime="20230914 10:55:06.277"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230914 10:55:06.278" endtime="20230914 10:55:06.400"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:08.400" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:06.400" endtime="20230914 10:55:08.400"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:03.195" endtime="20230914 10:55:08.400"/>
+</kw>
+<kw name="Hover component button">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${component_bt}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230914 10:55:08.403" level="INFO">Simulating Mouse Over on element '//a[@href='https://demo.opencart.com/index.php?route=product/category&amp;language=en-gb&amp;path=25' and @class='nav-link dropdown-toggle']'.</msg>
+<status status="PASS" starttime="20230914 10:55:08.400" endtime="20230914 10:55:08.678"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:10.679" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:08.678" endtime="20230914 10:55:10.679"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:08.400" endtime="20230914 10:55:10.679"/>
+</kw>
+<kw name="Select monitor button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${monitor_bt}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:10.679" level="INFO">Clicking element '//a[@href='https://demo.opencart.com/index.php?route=product/category&amp;language=en-gb&amp;path=25_28']'.</msg>
+<status status="PASS" starttime="20230914 10:55:10.679" endtime="20230914 10:55:11.076"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:13.078" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:11.077" endtime="20230914 10:55:13.078"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:10.679" endtime="20230914 10:55:13.078"/>
+</kw>
+<kw name="Select monitor product">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${monitor_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:13.078" level="INFO">Clicking element '//a[@href='https://demo.opencart.com/index.php?route=product/product&amp;language=en-gb&amp;path=25_28&amp;product_id=42' and contains(text(),'Apple Cinema 30"')]'.</msg>
+<status status="PASS" starttime="20230914 10:55:13.078" endtime="20230914 10:55:13.561"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:15.561" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:13.561" endtime="20230914 10:55:15.561"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:13.078" endtime="20230914 10:55:15.561"/>
+</kw>
+<kw name="Select small ratio">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${small_ratio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:15.561" level="INFO">Clicking element '//input[@name='option[218]' and @value='5']'.</msg>
+<status status="PASS" starttime="20230914 10:55:15.561" endtime="20230914 10:55:15.615"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:15.561" endtime="20230914 10:55:15.615"/>
+</kw>
+<kw name="Select checkbox 4">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${checkbox_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:15.615" level="INFO">Clicking element '//input[@type='checkbox' and @value='11']'.</msg>
+<status status="PASS" starttime="20230914 10:55:15.615" endtime="20230914 10:55:15.653"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:15.615" endtime="20230914 10:55:15.653"/>
+</kw>
+<kw name="Select blue color">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_form}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:15.654" level="INFO">Clicking element '//select[@class='form-select']'.</msg>
+<status status="PASS" starttime="20230914 10:55:15.653" endtime="20230914 10:55:15.705"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:17.706" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:15.705" endtime="20230914 10:55:17.706"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_form_blue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:17.706" level="INFO">Clicking element '//option[@value='3']'.</msg>
+<status status="PASS" starttime="20230914 10:55:17.706" endtime="20230914 10:55:17.739"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:15.653" endtime="20230914 10:55:17.739"/>
+</kw>
+<kw name="Input discount message">
+<arg>Buy with discount</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textbox}</arg>
+<arg>${message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:17.740" level="INFO">Typing text 'Buy with discount' into text field '//textarea[@name='option[209]']'.</msg>
+<status status="PASS" starttime="20230914 10:55:17.739" endtime="20230914 10:55:17.827"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:17.739" endtime="20230914 10:55:17.827"/>
+</kw>
+<kw name="Click add to cart">
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:19.829" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:17.827" endtime="20230914 10:55:19.829"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:19.829" level="INFO">Clicking button '//button[@type='submit' and contains(text(),'Add to Cart')]'.</msg>
+<status status="PASS" starttime="20230914 10:55:19.829" endtime="20230914 10:55:19.912"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:17.827" endtime="20230914 10:55:19.913"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:03.195" endtime="20230914 10:55:19.915"/>
+</test>
+<test id="s1-t2" name="OC_TC2 Verify that camera feature can open" line="62">
+<kw name="Open web">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${browser}</arg>
+<arg>browser=${platform}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230914 10:55:19.921" level="INFO">Opening browser 'chrome' to base url 'https://demo.opencart.com/'.</msg>
+<status status="PASS" starttime="20230914 10:55:19.921" endtime="20230914 10:55:22.749"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230914 10:55:22.749" endtime="20230914 10:55:22.862"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:24.862" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:22.862" endtime="20230914 10:55:24.862"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:19.921" endtime="20230914 10:55:24.862"/>
+</kw>
+<kw name="Click cameras button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cameras_bt}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:24.862" level="INFO">Clicking element '//a[@href='https://demo.opencart.com/index.php?route=product/category&amp;language=en-gb&amp;path=33']'.</msg>
+<status status="PASS" starttime="20230914 10:55:24.862" endtime="20230914 10:55:25.641"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:24.862" endtime="20230914 10:55:25.641"/>
+</kw>
+<kw name="Choose camera product">
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:27.643" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:25.642" endtime="20230914 10:55:27.643"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cameras_product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:27.643" level="INFO">Clicking element '//img[@src="https://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-250x250.jpg"]'.</msg>
+<status status="PASS" starttime="20230914 10:55:27.643" endtime="20230914 10:55:28.248"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:25.641" endtime="20230914 10:55:28.248"/>
+</kw>
+<kw name="Click add to cart">
+<kw name="Sleep" library="BuiltIn">
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230914 10:55:30.249" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230914 10:55:28.249" endtime="20230914 10:55:30.249"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230914 10:55:30.249" level="INFO">Clicking button '//button[@type='submit' and contains(text(),'Add to Cart')]'.</msg>
+<status status="PASS" starttime="20230914 10:55:30.249" endtime="20230914 10:55:30.296"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:28.249" endtime="20230914 10:55:30.296"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:19.920" endtime="20230914 10:55:30.296"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230914 10:55:30.296" endtime="20230914 10:55:42.579"/>
+</kw>
+<status status="PASS" starttime="20230914 10:55:02.990" endtime="20230914 10:55:42.579"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Opencart">Opencart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
